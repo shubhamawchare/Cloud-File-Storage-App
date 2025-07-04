@@ -34,7 +34,7 @@ A Google Drive–inspired **cloud file manager** built with **ASP.NET Core MVC**
 
 1. **Clone the Repo**
    ```bash
-   git clone https://github.com/yourusername/cloud-file-storage-app.git
+   git clone https://github.com/shubhamawchare/cloud-file-storage-app.git
    cd cloud-file-storage-app 
 
 2. **Setup the Database**
