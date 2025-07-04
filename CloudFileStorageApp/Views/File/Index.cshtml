@@ -1,0 +1,239 @@
+﻿@model IEnumerable<CloudFileStorageApp.Models.StoredFile>
+@using CloudFileStorageApp.Controllers
+@{
+    ViewData["Title"] = "My Cloud Drive";
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-2 bg-white shadow-sm py-4" id="sidebar">
+            <h5 class="text-primary text-center mb-4"><i class="fa-solid fa-folder-open"></i> Folders</h5>
+            <ul class="nav flex-column px-3">
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-dark fw-semibold @(currentAction == "Index" ? "active-link" : "")" asp-action="Index">
+                        <i class="fa-solid fa-file-lines me-2"></i> My Files
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-dark @(currentAction == "Recent" ? "active-link" : "")" asp-action="Recent">
+                        <i class="fa-solid fa-clock me-2"></i> Recent
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-danger @(currentAction == "Trash" ? "active-link" : "")" asp-action="Trash">
+                        <i class="fa-solid fa-trash me-2"></i> Trash
+                    </a>
+                </li>
+                @if (ViewBag.Folders != null)
+                {
+                    <hr />
+                    <li class="nav-item text-muted small fw-bold">Subfolders</li>
+                    @foreach (string folder in ViewBag.Folders)
+                    {
+                        <li class="nav-item mb-2">
+                            <a class="nav-link text-dark @(ViewBag.FolderName == folder ? "active-link" : "")" asp-action="Folder" asp-route-name="@folder">
+                                <i class="fa-solid fa-folder me-2 text-warning"></i> @folder
+                            </a>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-10 pt-4" id="main">
+
+            <!-- Header -->
+            <div class="text-center mb-4">
+                <img src="https://cdn-icons-png.flaticon.com/512/2920/2920345.png" alt="Cloud Icon" width="100" class="mb-2" />
+                <h2 class="mt-2 text-primary fw-bold">☁️ My Cloud Drive</h2>
+            </div>
+
+            @if (TempData["PublicLink"] != null)
+            {
+                <div class="alert alert-success text-center">
+                    🔗 Public Link: <a href="@TempData["PublicLink"]" target="_blank">@TempData["PublicLink"]</a>
+                </div>
+            }
+
+            <!-- Upload Form -->
+            <form asp-action="Upload" method="post" enctype="multipart/form-data" class="d-flex align-items-center mb-3">
+                <input type="file" name="file" class="form-control me-2" required />
+                <input type="text" name="folder" class="form-control me-2" placeholder="e.g. Work/Reports" />
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-upload"></i> Upload</button>
+            </form>
+
+            <!-- Drag-and-Drop Upload -->
+            <div id="dropZone" class="border p-4 text-center mb-4 bg-light rounded">
+                <p><i class="fa-solid fa-cloud-arrow-up fa-2x text-primary"></i></p>
+                <p class="text-muted">Drag & drop files here to upload</p>
+            </div>
+
+            <!-- Toolbar -->
+            <div class="d-flex justify-content-end align-items-center mb-3">
+                <input type="text" class="form-control form-control-sm me-2" id="searchBox" placeholder="Search..." />
+                <select id="sortDropdown" class="form-select form-select-sm w-auto">
+                    <option value="name">Sort by Name</option>
+                    <option value="date">Sort by Date</option>
+                </select>
+            </div>
+
+            <!-- Files -->
+            <div class="row" id="fileContainer">
+                @foreach (var file in Model)
+                {
+                    <div class="col-md-3 mb-4 file-card" data-name="@file.FileName.ToLower()" data-date="@file.UploadedOn">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="@FileController.GetFileIcon(file.FileName) fa-2x mb-3"></i>
+                                <h6 class="card-title text-truncate">@file.FileName</h6>
+                                <small class="text-muted">@file.UploadedOn.ToString("dd MMM yyyy")</small><br />
+                                <small class="text-muted">@FileController.FormatFileSize(file.FilePath)</small>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a asp-action="Download" asp-route-id="@file.Id" class="btn btn-sm btn-success me-1"><i class="fa-solid fa-download"></i></a>
+                                <a href="#" class="btn btn-sm btn-outline-primary me-1 preview-btn" data-path="@file.FilePath" data-filename="@file.FileName"><i class="fa-solid fa-eye"></i></a>
+
+                                @if (file.IsDeleted)
+                                {
+                                    <a asp-action="PermanentDelete" asp-route-id="@file.Id" class="btn btn-sm btn-danger me-1"><i class="fa-solid fa-trash-can"></i></a>
+                                    <a asp-action="Restore" asp-route-id="@file.Id" class="btn btn-sm btn-secondary"><i class="fa-solid fa-rotate-left"></i></a>
+                                }
+                                else
+                                {
+                                    <a href="#" class="btn btn-sm btn-outline-warning me-1 rename-btn" data-id="@file.Id" data-name="@file.FileName"><i class="fa-solid fa-pen"></i></a>
+                                    <a asp-action="GenerateLink" asp-route-id="@file.Id" class="btn btn-sm btn-outline-secondary me-1"><i class="fa-solid fa-link"></i></a>
+                                    <a asp-action="Delete" asp-route-id="@file.Id" class="btn btn-sm btn-danger"><i class="fa-solid fa-trash"></i></a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Preview Modal -->
+<div class="modal fade" id="previewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-light">
+            <div class="modal-header">
+                <h5 class="modal-title">File Preview</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center" id="previewBody">
+                <p>Loading preview...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Rename Modal -->
+<div class="modal fade" id="renameModal" tabindex="-1">
+    <div class="modal-dialog">
+        <form asp-action="Rename" method="post" class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Rename File</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="Id" id="renameId" />
+                <input type="text" name="NewName" id="renameInput" class="form-control" required />
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" type="submit">Save</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // 🔍 Search
+        document.getElementById("searchBox").addEventListener("keyup", function () {
+            const query = this.value.toLowerCase();
+            document.querySelectorAll(".file-card").forEach(card => {
+                const name = card.getAttribute("data-name");
+                card.style.display = name.includes(query) ? "block" : "none";
+            });
+        });
+
+        // 🔽 Sort
+        document.getElementById("sortDropdown").addEventListener("change", function () {
+            const type = this.value;
+            const cards = [...document.querySelectorAll(".file-card")];
+            const container = document.getElementById("fileContainer");
+
+            cards.sort((a, b) => {
+                const valA = type === "name" ? a.getAttribute("data-name") : new Date(a.getAttribute("data-date"));
+                const valB = type === "name" ? b.getAttribute("data-name") : new Date(b.getAttribute("data-date"));
+                return valA > valB ? 1 : -1;
+            });
+
+            container.innerHTML = '';
+            cards.forEach(card => container.appendChild(card));
+        });
+
+        // 👁️ Preview
+        document.querySelectorAll(".preview-btn").forEach(btn => {
+            btn.addEventListener("click", function (e) {
+                e.preventDefault();
+                const path = this.getAttribute("data-path");
+                const name = this.getAttribute("data-filename").toLowerCase();
+                const ext = name.split('.').pop();
+                const body = document.getElementById("previewBody");
+
+                let content = "<p>Preview not supported.</p>";
+                if (["jpg", "jpeg", "png", "gif", "webp"].includes(ext)) {
+                    content = `<img src="${path}" class="img-fluid rounded">`;
+                } else if (ext === "pdf") {
+                    content = `<iframe src="${path}" width="100%" height="600px" style="border:none;"></iframe>`;
+                }
+
+                body.innerHTML = content;
+                new bootstrap.Modal(document.getElementById("previewModal")).show();
+            });
+        });
+
+        // ✏️ Rename
+        document.querySelectorAll(".rename-btn").forEach(btn => {
+            btn.addEventListener("click", function () {
+                const id = this.getAttribute("data-id");
+                const name = this.getAttribute("data-name");
+
+                document.getElementById("renameId").value = id;
+                document.getElementById("renameInput").value = name;
+
+                new bootstrap.Modal(document.getElementById("renameModal")).show();
+            });
+        });
+
+        // 📤 Drag Upload
+        const dropZone = document.getElementById("dropZone");
+        dropZone.addEventListener("dragover", (e) => {
+            e.preventDefault();
+            dropZone.classList.add("bg-primary-subtle");
+        });
+        dropZone.addEventListener("dragleave", () => {
+            dropZone.classList.remove("bg-primary-subtle");
+        });
+        dropZone.addEventListener("drop", (e) => {
+            e.preventDefault();
+            dropZone.classList.remove("bg-primary-subtle");
+
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                const formData = new FormData();
+                formData.append("file", files[0]);
+
+                fetch("/File/Upload", {
+                    method: "POST",
+                    body: formData
+                }).then(() => location.reload());
+            }
+        });
+    </script>
+}

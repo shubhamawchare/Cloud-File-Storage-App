@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|c:\\users\\rog strix\\onedrive - mmu\\desktop\\.net projects\\cloudfilestorageapp\\cloudfilestorageapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|solutionrelative:cloudfilestorageapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|c:\\users\\rog strix\\onedrive - mmu\\desktop\\.net projects\\cloudfilestorageapp\\cloudfilestorageapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|solutionrelative:cloudfilestorageapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|c:\\users\\rog strix\\onedrive - mmu\\desktop\\.net projects\\cloudfilestorageapp\\cloudfilestorageapp\\views\\file\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|solutionrelative:cloudfilestorageapp\\views\\file\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Migrations\\20250704092536_AddPublicLinkSupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CloudFileStorageApp\\Migrations\\20250704092536_AddPublicLinkSupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|c:\\users\\rog strix\\onedrive - mmu\\desktop\\.net projects\\cloudfilestorageapp\\cloudfilestorageapp\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|solutionrelative:cloudfilestorageapp\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|c:\\users\\rog strix\\onedrive - mmu\\desktop\\.net projects\\cloudfilestorageapp\\cloudfilestorageapp\\models\\storedfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|solutionrelative:cloudfilestorageapp\\models\\storedfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|c:\\users\\rog strix\\onedrive - mmu\\desktop\\.net projects\\cloudfilestorageapp\\cloudfilestorageapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|solutionrelative:cloudfilestorageapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|c:\\users\\rog strix\\onedrive - mmu\\desktop\\.net projects\\cloudfilestorageapp\\cloudfilestorageapp\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|solutionrelative:cloudfilestorageapp\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|c:\\users\\rog strix\\onedrive - mmu\\desktop\\.net projects\\cloudfilestorageapp\\cloudfilestorageapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|solutionrelative:cloudfilestorageapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|c:\\users\\rog strix\\onedrive - mmu\\desktop\\.net projects\\cloudfilestorageapp\\cloudfilestorageapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F9AC56B-030F-4371-A6E0-7BE98A9273F1}|CloudFileStorageApp\\CloudFileStorageApp.csproj|solutionrelative:cloudfilestorageapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Migrations\\20250704074451_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CloudFileStorageApp\\Migrations\\20250704074451_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "CloudFileStorageApp\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "CloudFileStorageApp\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAEYBAAAAAAAAAAAswFcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-04T07:55:26.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250704092536_AddPublicLinkSupport.cs",
+              "DocumentMoniker": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Migrations\\20250704092536_AddPublicLinkSupport.cs",
+              "RelativeDocumentMoniker": "CloudFileStorageApp\\Migrations\\20250704092536_AddPublicLinkSupport.cs",
+              "ToolTip": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Migrations\\20250704092536_AddPublicLinkSupport.cs",
+              "RelativeToolTip": "CloudFileStorageApp\\Migrations\\20250704092536_AddPublicLinkSupport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T09:25:36.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "CloudFileStorageApp\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "CloudFileStorageApp\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-07-04T08:00:35.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CloudFileStorageApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CloudFileStorageApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAqwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-04T07:53:10.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20250704074451_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Migrations\\20250704074451_Initial.cs",
+              "RelativeDocumentMoniker": "CloudFileStorageApp\\Migrations\\20250704074451_Initial.cs",
+              "ToolTip": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Migrations\\20250704074451_Initial.cs",
+              "RelativeToolTip": "CloudFileStorageApp\\Migrations\\20250704074451_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T07:44:51.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Views\\File\\Index.cshtml",
+              "RelativeDocumentMoniker": "CloudFileStorageApp\\Views\\File\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Views\\File\\Index.cshtml",
+              "RelativeToolTip": "CloudFileStorageApp\\Views\\File\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADEAAAB/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-04T07:41:27.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "CloudFileStorageApp\\Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Controllers\\FileController.cs",
+              "RelativeToolTip": "CloudFileStorageApp\\Controllers\\FileController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAuwCUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T07:40:37.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\appsettings.json",
+              "RelativeDocumentMoniker": "CloudFileStorageApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\appsettings.json",
+              "RelativeToolTip": "CloudFileStorageApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-04T07:40:11.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Program.cs",
+              "RelativeDocumentMoniker": "CloudFileStorageApp\\Program.cs",
+              "ToolTip": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Program.cs",
+              "RelativeToolTip": "CloudFileStorageApp\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T07:39:56.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CloudFileStorageApp\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CloudFileStorageApp\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T07:39:26.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StoredFile.cs",
+              "DocumentMoniker": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Models\\StoredFile.cs",
+              "RelativeDocumentMoniker": "CloudFileStorageApp\\Models\\StoredFile.cs",
+              "ToolTip": "C:\\Users\\ROG STRIX\\OneDrive - MMU\\Desktop\\.Net Projects\\CloudFileStorageApp\\CloudFileStorageApp\\Models\\StoredFile.cs",
+              "RelativeToolTip": "CloudFileStorageApp\\Models\\StoredFile.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAxwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T07:38:54.199Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
